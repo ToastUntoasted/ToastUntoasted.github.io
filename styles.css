@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PS2 Font';
-  src: url('Emotion_Engine.otf') format('otf');
+  src: url('Emotion_Engine.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
