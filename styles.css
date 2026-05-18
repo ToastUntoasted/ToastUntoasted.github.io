@@ -29,6 +29,7 @@ ul {
 }
 
 #header {
+  position: relative;
   background-image: url('images/New\ Project.png');
   background-size: cover;
   background-position: center;
@@ -38,22 +39,33 @@ ul {
   color: white;
 }
 
+.header-right{
+    font-family: 'PS2 Font', monospace;
+    position: absolute;
+    text-align: right;
+    letter-spacing: 4px;
+    right: 100px;
+    bottom: 20px;
+    font-size: 2rem;
+}
+
 #header h1 {
   font-family: 'PS2 Font', monospace;
   letter-spacing: 4px;
   padding-left: 20px;
   padding-top: 20px;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
+
 #sidemenu li {
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   font-family: 'Nurture Font', serif;
   font-size: larger;
 }
 
 #sidemenu a {
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   font-family: 'Nurture Font', serif;
   color: white;
   text-decoration: none;
