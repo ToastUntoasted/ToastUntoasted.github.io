@@ -1,12 +1,67 @@
 @font-face {
   font-family: 'PS2 Font';
-  src: url('./Emotion_Engine.otf');
+  src: url('fonts/Emotion_Engine.otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-h1 {
+@font-face {
+    font-family: "Nurture Font";
+    src: url(fonts/BATANG.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3B6EA5;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 60px;
+  margin: 0;
+}
+
+#header {
+  background-image: url('images/New\ Project.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  color: white;
+}
+
+#header h1 {
   font-family: 'PS2 Font', monospace;
   letter-spacing: 4px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+#sidemenu li {
+  letter-spacing: 5px;
+  font-family: 'Nurture Font', serif;
+  font-size: larger;
+}
+
+#sidemenu a {
+  letter-spacing: 5px;
+  font-family: 'Nurture Font', serif;
+  color: white;
+  text-decoration: none;
+}
+
+#sidemenu a:visited {
+  letter-spacing: 5px;
+  font-family: 'Nurture Font', serif;
+  color: white;
+  text-decoration: none;
 }
