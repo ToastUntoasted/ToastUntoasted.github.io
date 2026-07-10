@@ -5,7 +5,7 @@
 </head>
 <body>
     <div id="header">
-        <h1>robert galletta</h1>
+        <h1>Robert Galletta</h1>
         <ul id ="sidemenu">
             <li><a href="#about">about me</a></li>
             <li><a href="#projects">projects</a></li>
@@ -13,26 +13,82 @@
             <li><a href="#contact">contact</a></li>
         </ul>
         <div class="header-right">
-            <h2>software engineer</h2>
+            <h2>Software Engineer</h2>
         </div>
     </div>
     <div id="about">
-        <h2>about me</h2>
+        <h2>About Me</h2>
         <div class="about-content">
-        <img src="images/headshot.jpeg" alt="My Headshot" class="about-photo">
-        <p>Hello, I'm Robby Galletta! I'm currently studying Software Engineering with a minor in Ocean Engineering at Stevens Institute of Technology. I currently work at the iSMART Laboratory on campus where I contribute to various research projects with water modeling and remote sensing. When I'm not working, you can find me hiking, listening to music, or video gaming.</p>
+            <div class="row">
+            <div class="about-col-1">
+                <img src="images/headshot.jpeg" alt="My Headshot" class="about-photo">
+            </div>
+            <div class="about-col-2">
+                <p>Hello, I'm Robby Galletta! I'm currently studying Software Engineering 
+                    with a minor in Ocean Engineering at Stevens Institute of Technology. 
+                    I currently work at the iSMART Laboratory on campus where I contribute 
+                    to various research projects with water modeling and remote sensing. When 
+                    I'm not working, you can find me hiking, listening to music, or video gaming.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', this)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span></span><br>Experience with AWS Macie, CloudWatch and S3 services.</li>
+                        <li><span>Databases</span><br>Experience with SQLite and using databases for data organization
+                            and relationships.</li>
+                        <li><span>Python Language</span><br>Multiple years experience developing in this language.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>iSMART Laboratory</span><br>Deployed rainfall monitoring sensors,
+                            developed data processing pipelines, and created a website for visualization of sensor data.
+                        </li>
+                        <li><span>FLOW Academy</span><br>Worked with USGS staff at the University of Alabama to test radar sensors for possible 
+                        alternatives to wire-weight gauges. Built DIY sensors for low-cost alternatives that utilize meshtastic for data transfer. </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Stevens Institute of Technology</span><br>Bachelors of Engineering in Software Engineering expected Spring 2027.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <div id="projects">
-        <h2>projects</h2>
+        <h2>Projects</h2>
         <p></p>
     </div>
     <div id="coursework">
-        <h2>coursework</h2>
+        <h2>Coursework</h2>
         <p></p>
     </div>
     <div id="contact">
-        <h2>contact me</h2>
+        <h2>Contact Me</h2>
         <p></p>
     </div>
+    <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, clickedTab) {
+        Array.from(tablinks).forEach((tablink) => {
+            tablink.classList.remove("active-link");
+        });
+
+        Array.from(tabcontents).forEach((tabcontent) => {
+            tabcontent.classList.remove("active-tab");
+        });
+
+        clickedTab.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </body>
 </html>
