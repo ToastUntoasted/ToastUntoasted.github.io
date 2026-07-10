@@ -104,11 +104,15 @@ ul {
   width: 100%;
 }
 
+#about{
+  min-height: 100vh;
+}
+
 #about h2{
   letter-spacing: 20px;
   font-family: 'Thin Font', serif;
   color: black;
-  font-size: 3rem;
+  font-size: 4rem;
   text-decoration: none;
   font-weight:100;
   padding-left: 20px;
@@ -123,7 +127,7 @@ ul {
 }
 
 .about-photo {
-    width: 320px;
+    width: 420px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
@@ -220,11 +224,21 @@ ul {
     font-weight: 600;
 }
 
+#projects {
+  position: relative;
+  background-image: url('images/new_grass.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 105vh;
+  background-attachment: fixed;
+  color: white;
+}
 #projects h2{
   letter-spacing: 20px;
   font-family: 'Thin Font', serif;
-  color: black;
-  font-size: 3rem;
+  color: white;
+  font-size: 4rem;
   text-decoration: none;
   font-weight:100;
   padding-left: 20px;
@@ -233,16 +247,28 @@ ul {
   letter-spacing: 20px;
   font-family: 'Thin Font', serif;
   color: black;
-  font-size: 3rem;
+  font-size: 4rem;
   text-decoration: none;
   font-weight:100;
   padding-left: 20px;
 }
+
+#contact {
+  position: relative;
+  background-image: url('images/new_school.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 75vh;
+  background-attachment: fixed;
+  color: white;
+}
+
 #contact h2{
   letter-spacing: 20px;
   font-family: 'Thin Font', serif;
-  color: black;
-  font-size: 3rem;
+  color: White;
+  font-size: 4rem;
   text-decoration: none;
   font-weight:100;
   padding-left: 20px;
